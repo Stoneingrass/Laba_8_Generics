@@ -34,4 +34,21 @@ public class SingleLinkedList<T extends Number> {
     public void setList(LinkedList<T> list) {
         this.list.addAll(list);
     }
+
+
+    public void addElement(T element) {
+        list.add(element);
+    }
+
+    public void removeElement(int index) {
+        list.remove(index);
+    }
+
+    public T getElement (int index) {
+        return list.get(index);
+    }
+
+    public void clear () {
+        list.clear();
+    }
 }
